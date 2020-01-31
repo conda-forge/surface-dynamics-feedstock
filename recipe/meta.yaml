@@ -1,5 +1,5 @@
 {% set name = "surface-dynamics" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name | replace('-', '_') }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 847fdf016f3dc7d3d9f93d867ca071e90d757c7a14873ca6f04e378b75618694
+  sha256: 5cd727a10111c6f75d9227a6bdb118e4c590e0e3eefe41b9bbc6b349162e392f
   patches:
     - 0001-Import-sage.all-initiall-so-that-imports-resolve-cor.patch
 
