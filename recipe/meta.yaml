@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name | replace('-', '_') }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 5cd727a10111c6f75d9227a6bdb118e4c590e0e3eefe41b9bbc6b349162e392f
-  patches:
-    - 0001-Import-sage.all-initiall-so-that-imports-resolve-cor.patch
 
 build:
   number: 0
