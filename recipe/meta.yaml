@@ -1,5 +1,5 @@
 {% set name = "surface-dynamics" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 package:
   name: {{ name }}
@@ -7,13 +7,15 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name | replace('-', '_') }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5cd727a10111c6f75d9227a6bdb118e4c590e0e3eefe41b9bbc6b349162e392f
+  sha256: e4f8a41b876382672e63cfdcdd565c53f8c0384d7c65140b0987909967312060
 
 build:
   number: 0
   # SageMath is not packaged for Windows
-  skip: True  # [win]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  skip: true  # [win]
+  # SageMath is not packaged for Python 3.8 yet
+  skip: true  # [py>=38]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -40,7 +42,7 @@ about:
   home: http://www.labri.fr/perso/vdelecro/surface-dynamics/latest/
   license: GPL-2.0-or-later
   license_file: COPYING
-  summary: 'SageMath package for translation surfaces and related functionality'
+  summary: SageMath package for translation surfaces and related functionality
   description: |
     The surface_dynamics package for SageMath adds functionality related to
     interval exchange transformations, translation surfaces, mapping classes and
