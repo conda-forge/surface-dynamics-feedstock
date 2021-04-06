@@ -1,5 +1,5 @@
 {% set name = "surface-dynamics" %}
-{% set version = "0.4.5" %}
+{% set version = "0.4.6" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name | replace('-', '_') }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: e4f8a41b876382672e63cfdcdd565c53f8c0384d7c65140b0987909967312060
+  sha256: f72d7576590a95396112d6a4e44e682adfab2d5562600d7fb2c7151ab1fab88d
 
 build:
   number: 0
