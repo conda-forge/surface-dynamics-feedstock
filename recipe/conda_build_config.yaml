@@ -3,6 +3,7 @@
 # change in 9.2 (ModuleElementWithMutability) but we have not checked the other
 # versions so there might be more than than.
 sagelib:
+  - 8.8
   - 8.9
   - 9.0
   - 9.1
