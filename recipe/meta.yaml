@@ -23,13 +23,13 @@ requirements:
   host:
     - python
     - pip
-    - sagelib
+    - sagelib {{ sagelib }}
     # surface_dynamics.interval_exchanges.iet_family links against ppl and gmp
     - ppl
     - gmp
   run:
     - python
-    - sagelib
+    - sagelib {{ sagelib }}
     # LattE Integrale is recommended, but it is not packaged yet: https://github.com/conda-forge/staged-recipes/pull/8959
 
 test:
