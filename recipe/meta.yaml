@@ -10,11 +10,9 @@ source:
   sha256: f72d7576590a95396112d6a4e44e682adfab2d5562600d7fb2c7151ab1fab88d
 
 build:
-  number: 0
+  number: 1
   # SageMath is not packaged for Windows
   skip: true  # [win]
-  # SageMath is not packaged for Python 3.8 yet
-  skip: true  # [py>=38]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
