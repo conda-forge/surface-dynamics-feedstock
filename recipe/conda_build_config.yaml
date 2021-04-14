@@ -1,0 +1,10 @@
+# Since we build with Cython against the SageMath API/ABI, we need to build
+# separately for different versions of SageMath. In fact, there is a breaking
+# change in 9.2 (ModuleElementWithMutability) but we have not checked the other
+# versions so there might be more than than.
+sagelib:
+  - 8.8
+  - 8.9
+  - 9.0
+  - 9.1
+  - 9.2
