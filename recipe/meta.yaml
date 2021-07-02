@@ -1,5 +1,5 @@
 {% set name = "surface-dynamics" %}
-{% set version = "0.4.6" %}
+{% set version = "0.4.7" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name | replace('-', '_') }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: f72d7576590a95396112d6a4e44e682adfab2d5562600d7fb2c7151ab1fab88d
+  sha256: 1bb1959e6e73c35b0806bd76d649563abebaeeece9dfa201203960149d63790b
 
 build:
-  number: 2
+  number: 0
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # SageMath <= 9.1 is not built for Python >= 3.8 on conda-forge
