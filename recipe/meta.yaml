@@ -14,7 +14,7 @@ build:
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # SageMath <= 9.1 is not built for Python >= 3.8 on conda-forge
-  skip: true  # [py>=38 and sagelib!='9.2']
+  skip: true  # [py>=38 and sagelib in ('8.8', '8.9', '9.0', '9.1')]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
