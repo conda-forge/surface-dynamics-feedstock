@@ -25,6 +25,9 @@ requirements:
   host:
     - python
     - pip
+    # sage.modular.multiple_zeta.MultizetaValues does not work in sagelib 9.3 with pari 2.13:
+    # "invalid flag in zetamultall"
+    - pari <2.13  # [ sagelib == '9.3' ]
     - sagelib {{ sagelib }}
     # surface_dynamics.interval_exchanges.iet_family links against ppl and gmp
     - ppl
@@ -33,6 +36,9 @@ requirements:
     - python
     - sagelib {{ sagelib }}
     # LattE Integrale is recommended, but it is not packaged yet: https://github.com/conda-forge/staged-recipes/pull/8959
+    # sage.modular.multiple_zeta.MultizetaValues does not work in sagelib 9.3 with pari 2.13:
+    # "invalid flag in zetamultall"
+    - pari <2.13  # [ sagelib == '9.3' ]
 
 test:
   imports:
