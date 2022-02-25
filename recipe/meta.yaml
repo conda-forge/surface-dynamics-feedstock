@@ -10,7 +10,7 @@ source:
   sha256: 1bb1959e6e73c35b0806bd76d649563abebaeeece9dfa201203960149d63790b
 
 build:
-  number: 2
+  number: 3
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # SageMath <= 9.1 is not built for Python >= 3.8 on conda-forge
