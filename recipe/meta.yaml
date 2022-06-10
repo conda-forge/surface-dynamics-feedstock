@@ -29,6 +29,8 @@ requirements:
     # "invalid flag in zetamultall"
     - pari <2.13  # [ sagelib == '9.3' ]
     - sagelib {{ sagelib }}
+    # sagelib<9.2 does not explicitly install libiconv which is needed in lots of places.
+    - libiconv
     # surface_dynamics.interval_exchanges.iet_family links against ppl and gmp
     - ppl
     - gmp
