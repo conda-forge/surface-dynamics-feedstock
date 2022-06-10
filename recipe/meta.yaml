@@ -10,7 +10,7 @@ source:
   sha256: 1bb1959e6e73c35b0806bd76d649563abebaeeece9dfa201203960149d63790b
 
 build:
-  number: 3
+  number: 4
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # SageMath <= 9.1 is not built for Python >= 3.8 on conda-forge
@@ -29,6 +29,8 @@ requirements:
     # "invalid flag in zetamultall"
     - pari <2.13  # [ sagelib == '9.3' ]
     - sagelib {{ sagelib }}
+    # sagelib<9.2 does not explicitly install libiconv which is needed in lots of places.
+    - libiconv
     # surface_dynamics.interval_exchanges.iet_family links against ppl and gmp
     - ppl
     - gmp
