@@ -8,6 +8,33 @@ jobs:
     vmImage: macOS-10.15
   strategy:
     matrix:
+      osx_64_python3.10.____cpythonsagelib8.8:
+        CONFIG: osx_64_python3.10.____cpythonsagelib8.8
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.10.____cpythonsagelib8.9:
+        CONFIG: osx_64_python3.10.____cpythonsagelib8.9
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.10.____cpythonsagelib9.0:
+        CONFIG: osx_64_python3.10.____cpythonsagelib9.0
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.10.____cpythonsagelib9.1:
+        CONFIG: osx_64_python3.10.____cpythonsagelib9.1
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.10.____cpythonsagelib9.2:
+        CONFIG: osx_64_python3.10.____cpythonsagelib9.2
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.10.____cpythonsagelib9.3:
+        CONFIG: osx_64_python3.10.____cpythonsagelib9.3
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.10.____cpythonsagelib9.4:
+        CONFIG: osx_64_python3.10.____cpythonsagelib9.4
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.10.____cpythonsagelib9.5:
+        CONFIG: osx_64_python3.10.____cpythonsagelib9.5
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.10.____cpythonsagelib9.6:
+        CONFIG: osx_64_python3.10.____cpythonsagelib9.6
+        UPLOAD_PACKAGES: 'True'
       osx_64_python3.7.____cpythonsagelib8.8:
         CONFIG: osx_64_python3.7.____cpythonsagelib8.8
         UPLOAD_PACKAGES: 'True'
