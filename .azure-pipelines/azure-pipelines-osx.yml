@@ -5,7 +5,7 @@
 jobs:
 - job: osx
   pool:
-    vmImage: macOS-10.15
+    vmImage: macOS-11
   strategy:
     matrix:
       osx_64_python3.10.____cpythonsagelib8.8:
@@ -35,6 +35,9 @@ jobs:
       osx_64_python3.10.____cpythonsagelib9.6:
         CONFIG: osx_64_python3.10.____cpythonsagelib9.6
         UPLOAD_PACKAGES: 'True'
+      osx_64_python3.10.____cpythonsagelib9.7:
+        CONFIG: osx_64_python3.10.____cpythonsagelib9.7
+        UPLOAD_PACKAGES: 'True'
       osx_64_python3.7.____cpythonsagelib8.8:
         CONFIG: osx_64_python3.7.____cpythonsagelib8.8
         UPLOAD_PACKAGES: 'True'
@@ -61,6 +64,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_python3.7.____cpythonsagelib9.6:
         CONFIG: osx_64_python3.7.____cpythonsagelib9.6
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.7.____cpythonsagelib9.7:
+        CONFIG: osx_64_python3.7.____cpythonsagelib9.7
         UPLOAD_PACKAGES: 'True'
       osx_64_python3.8.____cpythonsagelib8.8:
         CONFIG: osx_64_python3.8.____cpythonsagelib8.8
@@ -89,6 +95,9 @@ jobs:
       osx_64_python3.8.____cpythonsagelib9.6:
         CONFIG: osx_64_python3.8.____cpythonsagelib9.6
         UPLOAD_PACKAGES: 'True'
+      osx_64_python3.8.____cpythonsagelib9.7:
+        CONFIG: osx_64_python3.8.____cpythonsagelib9.7
+        UPLOAD_PACKAGES: 'True'
       osx_64_python3.9.____cpythonsagelib8.8:
         CONFIG: osx_64_python3.9.____cpythonsagelib8.8
         UPLOAD_PACKAGES: 'True'
@@ -115,6 +124,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_python3.9.____cpythonsagelib9.6:
         CONFIG: osx_64_python3.9.____cpythonsagelib9.6
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.9.____cpythonsagelib9.7:
+        CONFIG: osx_64_python3.9.____cpythonsagelib9.7
         UPLOAD_PACKAGES: 'True'
     maxParallel: 25
   timeoutInMinutes: 360

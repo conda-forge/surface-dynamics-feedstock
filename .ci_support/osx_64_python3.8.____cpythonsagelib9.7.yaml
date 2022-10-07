@@ -23,9 +23,9 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.7.* *_cpython
+- 3.8.* *_cpython
 sagelib:
-- '9.4'
+- '9.7'
 target_platform:
 - osx-64
 zip_keys:
