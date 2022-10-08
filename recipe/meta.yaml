@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name | replace('-', '_') }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 1bb1959e6e73c35b0806bd76d649563abebaeeece9dfa201203960149d63790b
+  patches:
+    - 0001-Work-around-changes-in-sagelib-9.7.patch
 
 build:
   number: 6
