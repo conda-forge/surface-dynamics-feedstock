@@ -19,6 +19,8 @@ build:
   skip: true  # [py>=38 and sagelib in ('8.8', '8.9', '9.0', '9.1')]
   # SageMath <= 9.4 is not built for Python >= 3.10 on conda-forge
   skip: true  # [py>=310 and sagelib in ('8.8', '8.9', '9.0', '9.1', '9.2', '9.3', '9.4')]
+  # SageMath >= 9.7 is not built for Python < 3.8 anymore on conda-forge
+  skip: true  # [py<38 and sagelib in ('9.7',)]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
