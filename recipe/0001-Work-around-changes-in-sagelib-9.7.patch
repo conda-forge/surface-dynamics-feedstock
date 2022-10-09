@@ -18,7 +18,7 @@ index 28d9ccc..ee888ab 100755
 +# Work around changes in SageMath 9.7, see https://trac.sagemath.org/wiki/ReleaseTours/sage-9.7#Packagessagesage.rings...arenownamespaces
 +try:
 +    from sage.misc.package_dir import cython_namespace_package_support
-+except ModuleNotFoundError:
++except (ModuleNotFoundError, ImportError):
 +    from contextlib import nullcontext
 +    cython_namespace_package_support = nullcontext
 +
