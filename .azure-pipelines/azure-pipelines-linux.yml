@@ -44,6 +44,10 @@ jobs:
         CONFIG: linux_64_python3.10.____cpythonsagelib9.6
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.10.____cpythonsagelib9.7:
+        CONFIG: linux_64_python3.10.____cpythonsagelib9.7
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_python3.7.____cpythonsagelib8.8:
         CONFIG: linux_64_python3.7.____cpythonsagelib8.8
         UPLOAD_PACKAGES: 'True'
@@ -78,6 +82,10 @@ jobs:
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_python3.7.____cpythonsagelib9.6:
         CONFIG: linux_64_python3.7.____cpythonsagelib9.6
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.7.____cpythonsagelib9.7:
+        CONFIG: linux_64_python3.7.____cpythonsagelib9.7
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_python3.8.____cpythonsagelib8.8:
@@ -116,6 +124,10 @@ jobs:
         CONFIG: linux_64_python3.8.____cpythonsagelib9.6
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.8.____cpythonsagelib9.7:
+        CONFIG: linux_64_python3.8.____cpythonsagelib9.7
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_python3.9.____cpythonsagelib8.8:
         CONFIG: linux_64_python3.9.____cpythonsagelib8.8
         UPLOAD_PACKAGES: 'True'
@@ -150,6 +162,10 @@ jobs:
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_python3.9.____cpythonsagelib9.6:
         CONFIG: linux_64_python3.9.____cpythonsagelib9.6
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_python3.9.____cpythonsagelib9.7:
+        CONFIG: linux_64_python3.9.____cpythonsagelib9.7
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
     maxParallel: 25

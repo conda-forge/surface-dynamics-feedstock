@@ -8,15 +8,19 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name | replace('-', '_') }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 1bb1959e6e73c35b0806bd76d649563abebaeeece9dfa201203960149d63790b
+  patches:
+    - 0001-Work-around-changes-in-sagelib-9.7.patch
 
 build:
-  number: 5
+  number: 6
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # SageMath <= 9.1 is not built for Python >= 3.8 on conda-forge
   skip: true  # [py>=38 and sagelib in ('8.8', '8.9', '9.0', '9.1')]
   # SageMath <= 9.4 is not built for Python >= 3.10 on conda-forge
   skip: true  # [py>=310 and sagelib in ('8.8', '8.9', '9.0', '9.1', '9.2', '9.3', '9.4')]
+  # SageMath >= 9.7 is not built for Python < 3.8 anymore on conda-forge
+  skip: true  # [py<38 and sagelib in ('9.7',)]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
