@@ -12,7 +12,7 @@ source:
     - 0001-Work-around-changes-in-sagelib-9.7.patch
 
 build:
-  number: 6
+  number: 7
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # SageMath <= 9.1 is not built for Python >= 3.8 on conda-forge
@@ -53,7 +53,7 @@ test:
     - surface_dynamics
 
 about:
-  home: http://www.labri.fr/perso/vdelecro/surface-dynamics/latest/
+  home: https://github.com/flatsurf/surface-dynamics
   license: GPL-2.0-or-later
   license_file: COPYING
   summary: SageMath package for translation surfaces and related functionality
@@ -61,8 +61,8 @@ about:
     The surface_dynamics package for SageMath adds functionality related to
     interval exchange transformations, translation surfaces, mapping classes and
     more.
-  doc_url: http://www.labri.fr/perso/vdelecro/surface-dynamics/latest/
-  dev_url: https://gitlab.com/videlec/surface_dynamics
+  doc_url: https://flatsurf.github.io/surface-dynamics/
+  dev_url: https://github.com/flatsurf/surface-dynamics
 
 extra:
   recipe-maintainers:
