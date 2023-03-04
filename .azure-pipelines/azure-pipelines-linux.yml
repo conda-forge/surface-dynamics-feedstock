@@ -8,22 +8,6 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_python3.10.____cpythonsagelib8.8:
-        CONFIG: linux_64_python3.10.____cpythonsagelib8.8
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.10.____cpythonsagelib8.9:
-        CONFIG: linux_64_python3.10.____cpythonsagelib8.9
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.10.____cpythonsagelib9.0:
-        CONFIG: linux_64_python3.10.____cpythonsagelib9.0
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.10.____cpythonsagelib9.1:
-        CONFIG: linux_64_python3.10.____cpythonsagelib9.1
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_python3.10.____cpythonsagelib9.2:
         CONFIG: linux_64_python3.10.____cpythonsagelib9.2
         UPLOAD_PACKAGES: 'True'
@@ -46,62 +30,6 @@ jobs:
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_python3.10.____cpythonsagelib9.7:
         CONFIG: linux_64_python3.10.____cpythonsagelib9.7
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.7.____cpythonsagelib8.8:
-        CONFIG: linux_64_python3.7.____cpythonsagelib8.8
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.7.____cpythonsagelib8.9:
-        CONFIG: linux_64_python3.7.____cpythonsagelib8.9
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.7.____cpythonsagelib9.0:
-        CONFIG: linux_64_python3.7.____cpythonsagelib9.0
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.7.____cpythonsagelib9.1:
-        CONFIG: linux_64_python3.7.____cpythonsagelib9.1
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.7.____cpythonsagelib9.2:
-        CONFIG: linux_64_python3.7.____cpythonsagelib9.2
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.7.____cpythonsagelib9.3:
-        CONFIG: linux_64_python3.7.____cpythonsagelib9.3
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.7.____cpythonsagelib9.4:
-        CONFIG: linux_64_python3.7.____cpythonsagelib9.4
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.7.____cpythonsagelib9.5:
-        CONFIG: linux_64_python3.7.____cpythonsagelib9.5
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.7.____cpythonsagelib9.6:
-        CONFIG: linux_64_python3.7.____cpythonsagelib9.6
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.7.____cpythonsagelib9.7:
-        CONFIG: linux_64_python3.7.____cpythonsagelib9.7
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.8.____cpythonsagelib8.8:
-        CONFIG: linux_64_python3.8.____cpythonsagelib8.8
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.8.____cpythonsagelib8.9:
-        CONFIG: linux_64_python3.8.____cpythonsagelib8.9
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.8.____cpythonsagelib9.0:
-        CONFIG: linux_64_python3.8.____cpythonsagelib9.0
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.8.____cpythonsagelib9.1:
-        CONFIG: linux_64_python3.8.____cpythonsagelib9.1
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_python3.8.____cpythonsagelib9.2:
@@ -128,22 +56,6 @@ jobs:
         CONFIG: linux_64_python3.8.____cpythonsagelib9.7
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.9.____cpythonsagelib8.8:
-        CONFIG: linux_64_python3.9.____cpythonsagelib8.8
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.9.____cpythonsagelib8.9:
-        CONFIG: linux_64_python3.9.____cpythonsagelib8.9
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.9.____cpythonsagelib9.0:
-        CONFIG: linux_64_python3.9.____cpythonsagelib9.0
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_python3.9.____cpythonsagelib9.1:
-        CONFIG: linux_64_python3.9.____cpythonsagelib9.1
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_python3.9.____cpythonsagelib9.2:
         CONFIG: linux_64_python3.9.____cpythonsagelib9.2
         UPLOAD_PACKAGES: 'True'
@@ -168,7 +80,6 @@ jobs:
         CONFIG: linux_64_python3.9.____cpythonsagelib9.7
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-    maxParallel: 25
   timeoutInMinutes: 360
 
   steps:
