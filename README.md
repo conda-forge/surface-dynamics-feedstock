@@ -1,17 +1,17 @@
-About surface-dynamics
-======================
-
-Home: http://www.labri.fr/perso/vdelecro/surface-dynamics/latest/
-
-Package license: GPL-2.0-or-later
+About surface-dynamics-feedstock
+================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/surface-dynamics-feedstock/blob/main/LICENSE.txt)
 
+Home: https://github.com/flatsurf/surface-dynamics
+
+Package license: GPL-2.0-or-later
+
 Summary: SageMath package for translation surfaces and related functionality
 
-Development: https://gitlab.com/videlec/surface_dynamics
+Development: https://github.com/flatsurf/surface-dynamics
 
-Documentation: http://www.labri.fr/perso/vdelecro/surface-dynamics/latest/
+Documentation: https://flatsurf.github.io/surface-dynamics/
 
 The surface_dynamics package for SageMath adds functionality related to
 interval exchange transformations, translation surfaces, mapping classes and
@@ -36,563 +36,255 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_python3.10.____cpythonsagelib8.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.10.____cpythonsagelib8.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.10.____cpythonsagelib8.9</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.10.____cpythonsagelib8.9" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.10.____cpythonsagelib9.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.10.____cpythonsagelib9.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.10.____cpythonsagelib9.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.10.____cpythonsagelib9.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_python3.10.____cpythonsagelib9.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.10.____cpythonsagelib9.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpythonsagelib9.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.10.____cpythonsagelib9.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.10.____cpythonsagelib9.3" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpythonsagelib9.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.10.____cpythonsagelib9.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.10.____cpythonsagelib9.4" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpythonsagelib9.4" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.10.____cpythonsagelib9.5</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.10.____cpythonsagelib9.5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpythonsagelib9.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.10.____cpythonsagelib9.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.10.____cpythonsagelib9.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpythonsagelib9.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.10.____cpythonsagelib9.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.10.____cpythonsagelib9.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.7.____cpythonsagelib8.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.7.____cpythonsagelib8.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.7.____cpythonsagelib8.9</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.7.____cpythonsagelib8.9" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.7.____cpythonsagelib9.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.7.____cpythonsagelib9.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.7.____cpythonsagelib9.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.7.____cpythonsagelib9.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.7.____cpythonsagelib9.2</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.7.____cpythonsagelib9.2" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.7.____cpythonsagelib9.3</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.7.____cpythonsagelib9.3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.7.____cpythonsagelib9.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.7.____cpythonsagelib9.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.7.____cpythonsagelib9.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.7.____cpythonsagelib9.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.7.____cpythonsagelib9.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.7.____cpythonsagelib9.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.7.____cpythonsagelib9.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.7.____cpythonsagelib9.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.8.____cpythonsagelib8.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____cpythonsagelib8.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.8.____cpythonsagelib8.9</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____cpythonsagelib8.9" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.8.____cpythonsagelib9.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____cpythonsagelib9.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.8.____cpythonsagelib9.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____cpythonsagelib9.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpythonsagelib9.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.8.____cpythonsagelib9.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____cpythonsagelib9.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____cpythonsagelib9.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.8.____cpythonsagelib9.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____cpythonsagelib9.3" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____cpythonsagelib9.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.8.____cpythonsagelib9.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____cpythonsagelib9.4" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____cpythonsagelib9.4" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.8.____cpythonsagelib9.5</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____cpythonsagelib9.5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____cpythonsagelib9.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.8.____cpythonsagelib9.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____cpythonsagelib9.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____cpythonsagelib9.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.8.____cpythonsagelib9.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____cpythonsagelib9.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.9.____cpythonsagelib8.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____cpythonsagelib8.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.9.____cpythonsagelib8.9</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____cpythonsagelib8.9" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.9.____cpythonsagelib9.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____cpythonsagelib9.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.9.____cpythonsagelib9.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____cpythonsagelib9.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____cpythonsagelib9.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.9.____cpythonsagelib9.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____cpythonsagelib9.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpythonsagelib9.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.9.____cpythonsagelib9.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____cpythonsagelib9.3" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpythonsagelib9.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.9.____cpythonsagelib9.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____cpythonsagelib9.4" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpythonsagelib9.4" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.9.____cpythonsagelib9.5</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____cpythonsagelib9.5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpythonsagelib9.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.9.____cpythonsagelib9.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____cpythonsagelib9.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpythonsagelib9.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.9.____cpythonsagelib9.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____cpythonsagelib9.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.10.____cpythonsagelib8.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.10.____cpythonsagelib8.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.10.____cpythonsagelib8.9</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.10.____cpythonsagelib8.9" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.10.____cpythonsagelib9.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.10.____cpythonsagelib9.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.10.____cpythonsagelib9.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.10.____cpythonsagelib9.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpythonsagelib9.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.10.____cpythonsagelib9.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.10.____cpythonsagelib9.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpythonsagelib9.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.10.____cpythonsagelib9.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.10.____cpythonsagelib9.3" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpythonsagelib9.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.10.____cpythonsagelib9.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.10.____cpythonsagelib9.4" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpythonsagelib9.4" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.10.____cpythonsagelib9.5</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.10.____cpythonsagelib9.5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpythonsagelib9.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.10.____cpythonsagelib9.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.10.____cpythonsagelib9.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpythonsagelib9.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.10.____cpythonsagelib9.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.10.____cpythonsagelib9.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.7.____cpythonsagelib8.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.7.____cpythonsagelib8.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.7.____cpythonsagelib8.9</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.7.____cpythonsagelib8.9" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.7.____cpythonsagelib9.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.7.____cpythonsagelib9.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.7.____cpythonsagelib9.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.7.____cpythonsagelib9.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.7.____cpythonsagelib9.2</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.7.____cpythonsagelib9.2" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.7.____cpythonsagelib9.3</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.7.____cpythonsagelib9.3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.7.____cpythonsagelib9.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.7.____cpythonsagelib9.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.7.____cpythonsagelib9.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.7.____cpythonsagelib9.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.7.____cpythonsagelib9.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.7.____cpythonsagelib9.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.7.____cpythonsagelib9.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.7.____cpythonsagelib9.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.8.____cpythonsagelib8.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.8.____cpythonsagelib8.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.8.____cpythonsagelib8.9</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.8.____cpythonsagelib8.9" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.8.____cpythonsagelib9.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.8.____cpythonsagelib9.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.8.____cpythonsagelib9.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.8.____cpythonsagelib9.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpythonsagelib9.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.8.____cpythonsagelib9.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.8.____cpythonsagelib9.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.8.____cpythonsagelib9.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.8.____cpythonsagelib9.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.8.____cpythonsagelib9.3" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.8.____cpythonsagelib9.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.8.____cpythonsagelib9.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.8.____cpythonsagelib9.4" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.8.____cpythonsagelib9.4" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.8.____cpythonsagelib9.5</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.8.____cpythonsagelib9.5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.8.____cpythonsagelib9.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.8.____cpythonsagelib9.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.8.____cpythonsagelib9.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.8.____cpythonsagelib9.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.8.____cpythonsagelib9.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.8.____cpythonsagelib9.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.9.____cpythonsagelib8.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.9.____cpythonsagelib8.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.9.____cpythonsagelib8.9</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.9.____cpythonsagelib8.9" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.9.____cpythonsagelib9.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.9.____cpythonsagelib9.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.9.____cpythonsagelib9.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.9.____cpythonsagelib9.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.8.____cpythonsagelib9.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.9.____cpythonsagelib9.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.9.____cpythonsagelib9.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpythonsagelib9.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.9.____cpythonsagelib9.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.9.____cpythonsagelib9.3" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpythonsagelib9.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.9.____cpythonsagelib9.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.9.____cpythonsagelib9.4" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpythonsagelib9.4" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.9.____cpythonsagelib9.5</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.9.____cpythonsagelib9.5" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpythonsagelib9.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.9.____cpythonsagelib9.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.9.____cpythonsagelib9.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpythonsagelib9.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.9.____cpythonsagelib9.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.9.____cpythonsagelib9.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpythonsagelib9.7" alt="variant">
                 </a>
               </td>
             </tr>
