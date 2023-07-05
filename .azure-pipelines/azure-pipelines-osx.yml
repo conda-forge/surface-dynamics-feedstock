@@ -29,6 +29,9 @@ jobs:
       osx_64_python3.10.____cpythonsagelib9.7:
         CONFIG: osx_64_python3.10.____cpythonsagelib9.7
         UPLOAD_PACKAGES: 'True'
+      osx_64_python3.10.____cpythonsagelib9.8:
+        CONFIG: osx_64_python3.10.____cpythonsagelib9.8
+        UPLOAD_PACKAGES: 'True'
       osx_64_python3.8.____cpythonsagelib10.0:
         CONFIG: osx_64_python3.8.____cpythonsagelib10.0
         UPLOAD_PACKAGES: 'True'
@@ -50,6 +53,9 @@ jobs:
       osx_64_python3.8.____cpythonsagelib9.7:
         CONFIG: osx_64_python3.8.____cpythonsagelib9.7
         UPLOAD_PACKAGES: 'True'
+      osx_64_python3.8.____cpythonsagelib9.8:
+        CONFIG: osx_64_python3.8.____cpythonsagelib9.8
+        UPLOAD_PACKAGES: 'True'
       osx_64_python3.9.____cpythonsagelib10.0:
         CONFIG: osx_64_python3.9.____cpythonsagelib10.0
         UPLOAD_PACKAGES: 'True'
@@ -70,6 +76,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_python3.9.____cpythonsagelib9.7:
         CONFIG: osx_64_python3.9.____cpythonsagelib9.7
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.9.____cpythonsagelib9.8:
+        CONFIG: osx_64_python3.9.____cpythonsagelib9.8
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
