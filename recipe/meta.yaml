@@ -12,7 +12,7 @@ source:
     - 0001-Work-around-changes-in-sagelib-9.7.patch
 
 build:
-  number: 9
+  number: 10
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # SageMath <= 9.1 is not built for Python >= 3.8 on conda-forge
@@ -20,7 +20,7 @@ build:
   # SageMath <= 9.4 is not built for Python >= 3.10 on conda-forge
   skip: true  # [py>=310 and sagelib in ('8.8', '8.9', '9.0', '9.1', '9.2', '9.3', '9.4')]
   # SageMath >= 9.7 is not built for Python < 3.8 anymore on conda-forge
-  skip: true  # [py<38 and sagelib in ('9.7',)]
+  skip: true  # [py<38 and sagelib in ('9.7','9.8', '10.0', '10.1', '10.2')]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
