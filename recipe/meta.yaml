@@ -34,8 +34,8 @@ build:
   skip: true  # [sagelib == '9.6' and py not in (38, 39, 310)]
   # sagelib 9.7 is only available for Python 3.8, 3.9, 3.10
   skip: true  # [sagelib == '9.7' and py not in (38, 39, 310)]
-  # sagelib 9.8 is only available for Python 3.8, 3.9, 3.10
-  skip: true  # [sagelib == '9.8' and py not in (38, 39, 310)]
+  # sagelib 9.8 is only available for Python 3.8, 3.9, 3.10, 3.11
+  skip: true  # [sagelib == '9.8' and py not in (38, 39, 310, 311)]
   # sagelib 10.0 is only available for Python 3.8, 3.9, 3.10, 3.11
   skip: true  # [sagelib == '10.0' and py not in (38, 39, 310, 311)]
   # sagelib 10.1 is only available for Python 3.8, 3.9, 3.10, 3.11
