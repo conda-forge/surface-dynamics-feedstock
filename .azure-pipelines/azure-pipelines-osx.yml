@@ -11,6 +11,12 @@ jobs:
       osx_64_python3.10.____cpythonsagelib10.0:
         CONFIG: osx_64_python3.10.____cpythonsagelib10.0
         UPLOAD_PACKAGES: 'True'
+      osx_64_python3.10.____cpythonsagelib10.1:
+        CONFIG: osx_64_python3.10.____cpythonsagelib10.1
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.10.____cpythonsagelib10.2:
+        CONFIG: osx_64_python3.10.____cpythonsagelib10.2
+        UPLOAD_PACKAGES: 'True'
       osx_64_python3.10.____cpythonsagelib9.2:
         CONFIG: osx_64_python3.10.____cpythonsagelib9.2
         UPLOAD_PACKAGES: 'True'
@@ -32,8 +38,44 @@ jobs:
       osx_64_python3.10.____cpythonsagelib9.8:
         CONFIG: osx_64_python3.10.____cpythonsagelib9.8
         UPLOAD_PACKAGES: 'True'
+      osx_64_python3.11.____cpythonsagelib10.0:
+        CONFIG: osx_64_python3.11.____cpythonsagelib10.0
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.11.____cpythonsagelib10.1:
+        CONFIG: osx_64_python3.11.____cpythonsagelib10.1
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.11.____cpythonsagelib10.2:
+        CONFIG: osx_64_python3.11.____cpythonsagelib10.2
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.11.____cpythonsagelib9.2:
+        CONFIG: osx_64_python3.11.____cpythonsagelib9.2
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.11.____cpythonsagelib9.3:
+        CONFIG: osx_64_python3.11.____cpythonsagelib9.3
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.11.____cpythonsagelib9.4:
+        CONFIG: osx_64_python3.11.____cpythonsagelib9.4
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.11.____cpythonsagelib9.5:
+        CONFIG: osx_64_python3.11.____cpythonsagelib9.5
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.11.____cpythonsagelib9.6:
+        CONFIG: osx_64_python3.11.____cpythonsagelib9.6
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.11.____cpythonsagelib9.7:
+        CONFIG: osx_64_python3.11.____cpythonsagelib9.7
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.11.____cpythonsagelib9.8:
+        CONFIG: osx_64_python3.11.____cpythonsagelib9.8
+        UPLOAD_PACKAGES: 'True'
       osx_64_python3.8.____cpythonsagelib10.0:
         CONFIG: osx_64_python3.8.____cpythonsagelib10.0
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.8.____cpythonsagelib10.1:
+        CONFIG: osx_64_python3.8.____cpythonsagelib10.1
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.8.____cpythonsagelib10.2:
+        CONFIG: osx_64_python3.8.____cpythonsagelib10.2
         UPLOAD_PACKAGES: 'True'
       osx_64_python3.8.____cpythonsagelib9.2:
         CONFIG: osx_64_python3.8.____cpythonsagelib9.2
@@ -59,6 +101,12 @@ jobs:
       osx_64_python3.9.____cpythonsagelib10.0:
         CONFIG: osx_64_python3.9.____cpythonsagelib10.0
         UPLOAD_PACKAGES: 'True'
+      osx_64_python3.9.____cpythonsagelib10.1:
+        CONFIG: osx_64_python3.9.____cpythonsagelib10.1
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.9.____cpythonsagelib10.2:
+        CONFIG: osx_64_python3.9.____cpythonsagelib10.2
+        UPLOAD_PACKAGES: 'True'
       osx_64_python3.9.____cpythonsagelib9.2:
         CONFIG: osx_64_python3.9.____cpythonsagelib9.2
         UPLOAD_PACKAGES: 'True'
@@ -80,12 +128,17 @@ jobs:
       osx_64_python3.9.____cpythonsagelib9.8:
         CONFIG: osx_64_python3.9.____cpythonsagelib9.8
         UPLOAD_PACKAGES: 'True'
+    maxParallel: 25
   timeoutInMinutes: 360
+  variables: {}
 
   steps:
   # TODO: Fast finish on azure pipelines?
   - script: |
       export CI=azure
+      export flow_run_id=azure_$(Build.BuildNumber).$(System.JobAttempt)
+      export remote_url=$(Build.Repository.Uri)
+      export sha=$(Build.SourceVersion)
       export OSX_FORCE_SDK_DOWNLOAD="1"
       export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
       export FEEDSTOCK_NAME=$(basename ${BUILD_REPOSITORY_NAME})
