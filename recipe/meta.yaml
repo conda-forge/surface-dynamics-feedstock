@@ -16,14 +16,8 @@ build:
   number: 10
   # SageMath is not packaged for Windows
   skip: true  # [win]
-  # SageMath <= 9.1 is not built for Python >= 3.8 on conda-forge
-  skip: true  # [py>=38 and sagelib in ('8.8', '8.9', '9.0', '9.1')]
-  # SageMath <= 9.4 is not built for Python >= 3.10 on conda-forge
-  skip: true  # [py>=310 and sagelib in ('8.8', '8.9', '9.0', '9.1', '9.2', '9.3', '9.4')]
-  # SageMath <= 9.7 is not built for Python >= 3.11 on conda-forge
-  skip: true  # [py>=311 and sagelib in ('9.2', '9.3', '9.3', '9.4', '9.5', '9.6', '9.7')]
-  # SageMath >= 9.7 is not built for Python < 3.8 anymore on conda-forge
-  skip: true  # [py<38 and sagelib in ('9.7','9.8', '10.0', '10.1', '10.2')]
+  # Different versions of SageMath have been built for different versions of Python
+  skip: true  # [(sagelib, py) not in [('8.8', 38), ('8.8', 39), ('8.9', 38), ('8.9', 39), ('9.0', 38), ('9.1', 38), ('9.1', 39), ('9.2', 39), ('9.3', 38), ('9.3', 39), ('9.4', 38), ('9.4', 39), ('9.5', 38), ('9.5', 39), ('9.5', 310), ('9.6', 38), ('9.6', 39), ('9.6', 310), ('9.7', 38), ('9.7', 39), ('9.7', 310), ('9.8', 38), ('9.8', 39), ('9.8', 310), ('9.8', 311), ('10.0', 38), ('10.0', 39), ('10.0', 310), ('10.0', 311), ('10.1', 38), ('10.1', 39), ('10.1', 310), ('10.1', 311), ('10.2', 38), ('10.2', 39), ('10.2', 310), ('10.2', 311)]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
