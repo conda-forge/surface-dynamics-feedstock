@@ -42,6 +42,8 @@ build:
   skip: true  # [sagelib == '10.1' and py not in (38, 39, 310, 311)]
   # sagelib 10.2 is only available for Python 3.9, 3.10, 3.11
   skip: true  # [sagelib == '10.2' and py not in (39, 310, 311)]
+  # sagelib 10.3 is only available for Python 3.9, 3.10, 3.11
+  skip: true  # [sagelib == '10.3' and py not in (39, 310, 311)]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
