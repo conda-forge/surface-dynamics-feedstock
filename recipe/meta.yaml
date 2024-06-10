@@ -10,7 +10,7 @@ source:
   sha256: 0027b615289769c7aadc07b39b1ce2d673f613f4eecec26b06411d037ddd03be
 
 build:
-  number: 0
+  number: 1
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # Different versions of SageMath have been built for different versions of Python
