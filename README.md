@@ -57,6 +57,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_64_python3.10.____cpythonsagelib10.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpythonsagelib10.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_64_python3.10.____cpythonsagelib9.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
@@ -124,6 +131,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.11.____cpythonsagelib10.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_python3.11.____cpythonsagelib10.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.11.____cpythonsagelib10.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -197,6 +211,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_64_python3.8.____cpythonsagelib10.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____cpythonsagelib10.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_64_python3.8.____cpythonsagelib9.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
@@ -264,6 +285,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpythonsagelib10.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_python3.9.____cpythonsagelib10.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpythonsagelib10.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -337,6 +365,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_python3.10.____cpythonsagelib10.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpythonsagelib10.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_python3.10.____cpythonsagelib9.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
@@ -404,6 +439,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.11.____cpythonsagelib10.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_python3.11.____cpythonsagelib10.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.11.____cpythonsagelib10.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -477,6 +519,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_python3.8.____cpythonsagelib10.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.8.____cpythonsagelib10.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_python3.8.____cpythonsagelib9.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
@@ -544,6 +593,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpythonsagelib10.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_python3.9.____cpythonsagelib10.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7279&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/surface-dynamics-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpythonsagelib10.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
