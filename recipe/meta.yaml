@@ -10,7 +10,7 @@ source:
   sha256: 0027b615289769c7aadc07b39b1ce2d673f613f4eecec26b06411d037ddd03be
 
 build:
-  number: 0
+  number: 1
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # Different versions of SageMath have been built for different versions of Python
@@ -42,11 +42,14 @@ build:
   skip: true  # [sagelib == '10.1' and py not in (38, 39, 310, 311)]
   # sagelib 10.2 is only available for Python 3.9, 3.10, 3.11
   skip: true  # [sagelib == '10.2' and py not in (39, 310, 311)]
+  # sagelib 10.3 is only available for Python 3.9, 3.10, 3.11
+  skip: true  # [sagelib == '10.3' and py not in (39, 310, 311)]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     # surface_dynamics.interval_exchanges.iet_family uses C++
     - {{ compiler('cxx') }}
   host:
