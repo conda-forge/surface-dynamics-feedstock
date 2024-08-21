@@ -1,16 +1,16 @@
 {% set name = "surface-dynamics" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0027b615289769c7aadc07b39b1ce2d673f613f4eecec26b06411d037ddd03be
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: cc2a9ca4ddddf67d220648380510a180334bc96163c72b6bd7a8bb86e1c40785
 
 build:
-  number: 2
+  number: 0
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # Different versions of SageMath have been built for different versions of Python
