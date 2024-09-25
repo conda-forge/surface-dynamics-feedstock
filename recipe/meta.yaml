@@ -55,6 +55,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     # sage.modular.multiple_zeta.MultizetaValues does not work in sagelib 9.3 with pari 2.13:
     # "invalid flag in zetamultall"
     - pari <2.13  # [ sagelib == '9.3' ]
