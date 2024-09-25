@@ -10,7 +10,7 @@ source:
   sha256: cc2a9ca4ddddf67d220648380510a180334bc96163c72b6bd7a8bb86e1c40785
 
 build:
-  number: 0
+  number: 1
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # Different versions of SageMath have been built for different versions of Python
@@ -55,6 +55,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     # sage.modular.multiple_zeta.MultizetaValues does not work in sagelib 9.3 with pari 2.13:
     # "invalid flag in zetamultall"
     - pari <2.13  # [ sagelib == '9.3' ]
