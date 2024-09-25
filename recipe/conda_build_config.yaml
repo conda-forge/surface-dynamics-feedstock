@@ -15,8 +15,3 @@ sagelib:
   - 10.2
   - 10.3
   - 10.4
-
-libcxx:  # [osx]
-  - 16   # [osx]
-  - 17   # [osx]
-  - 18   # [osx]
