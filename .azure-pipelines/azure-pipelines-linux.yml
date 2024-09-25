@@ -200,7 +200,7 @@ jobs:
         CONFIG: linux_64_python3.9.____cpythonsagelib9.8
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-    maxParallel: 25
+    maxParallel: 17
   timeoutInMinutes: 360
   variables: {}
 
