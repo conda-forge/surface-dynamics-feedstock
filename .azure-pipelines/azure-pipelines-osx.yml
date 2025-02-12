@@ -179,6 +179,9 @@ jobs:
       osx_arm64_python3.10.____cpythonsagelib10.4:
         CONFIG: osx_arm64_python3.10.____cpythonsagelib10.4
         UPLOAD_PACKAGES: 'True'
+      osx_arm64_python3.10.____cpythonsagelib10.5:
+        CONFIG: osx_arm64_python3.10.____cpythonsagelib10.5
+        UPLOAD_PACKAGES: 'True'
       osx_arm64_python3.10.____cpythonsagelib9.2:
         CONFIG: osx_arm64_python3.10.____cpythonsagelib9.2
         UPLOAD_PACKAGES: 'True'
@@ -214,6 +217,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_arm64_python3.11.____cpythonsagelib10.4:
         CONFIG: osx_arm64_python3.11.____cpythonsagelib10.4
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_python3.11.____cpythonsagelib10.5:
+        CONFIG: osx_arm64_python3.11.____cpythonsagelib10.5
         UPLOAD_PACKAGES: 'True'
       osx_arm64_python3.11.____cpythonsagelib9.2:
         CONFIG: osx_arm64_python3.11.____cpythonsagelib9.2
@@ -251,6 +257,9 @@ jobs:
       osx_arm64_python3.12.____cpythonsagelib10.4:
         CONFIG: osx_arm64_python3.12.____cpythonsagelib10.4
         UPLOAD_PACKAGES: 'True'
+      osx_arm64_python3.12.____cpythonsagelib10.5:
+        CONFIG: osx_arm64_python3.12.____cpythonsagelib10.5
+        UPLOAD_PACKAGES: 'True'
       osx_arm64_python3.12.____cpythonsagelib9.2:
         CONFIG: osx_arm64_python3.12.____cpythonsagelib9.2
         UPLOAD_PACKAGES: 'True'
@@ -286,6 +295,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_arm64_python3.9.____cpythonsagelib10.4:
         CONFIG: osx_arm64_python3.9.____cpythonsagelib10.4
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_python3.9.____cpythonsagelib10.5:
+        CONFIG: osx_arm64_python3.9.____cpythonsagelib10.5
         UPLOAD_PACKAGES: 'True'
       osx_arm64_python3.9.____cpythonsagelib9.2:
         CONFIG: osx_arm64_python3.9.____cpythonsagelib9.2
