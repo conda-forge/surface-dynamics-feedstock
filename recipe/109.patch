@@ -1,0 +1,458 @@
+diff --git a/doc/news/fix-new-and-compiler-warnings.rst b/doc/news/fix-new-and-compiler-warnings.rst
+new file mode 100644
+index 00000000..7a8620a3
+--- /dev/null
++++ b/doc/news/fix-new-and-compiler-warnings.rst
+@@ -0,0 +1,4 @@
++**Fixed:**
++
++* Fix a call to __new__ on class that inherit from UniqueRepresentation
++* Get rid of C/C++ compiler warnings
+diff --git a/surface_dynamics/flat_surfaces/origamis/lyapunov_exponents.c b/surface_dynamics/flat_surfaces/origamis/lyapunov_exponents.c
+index 53cd3e3e..c56d789a 100644
+--- a/surface_dynamics/flat_surfaces/origamis/lyapunov_exponents.c
++++ b/surface_dynamics/flat_surfaces/origamis/lyapunov_exponents.c
+@@ -65,7 +65,7 @@ static inline size_t lcm(size_t a, size_t b)
+ {
+ 	size_t aa = a, r=b, bb;
+ 
+-	while(bb = r)
++	while((bb = r))
+ 	{
+ 		r = aa%bb;
+ 		aa = bb;
+@@ -74,25 +74,25 @@ static inline size_t lcm(size_t a, size_t b)
+ 	return (a/aa)*b;
+ }
+ 
+-void invariant_projection(double **v, size_t DEGREE, size_t NB_VECTORS, int *s)
+-/* put the vector v[i] for i=0,...,NB_VECTORS in the invariant subspace of s */
++void invariant_projection(double **v, int DEGREE, int NB_VECTORS, int *s)
++/* put the vector v[i] for i=0,...,NB_VECTORS in the invariant subspace of the involution s */
+ {
+-	size_t i,j;
++	int i, j;
+ 
+ #if _VERBOSE_ > 10
+-	printf("Projection on E+ of the %d vectors at %x ",NB_VECTORS,v);
++	printf("Projection on E+ of the %d vectors at %x ", NB_VECTORS, v);
+ 	printf("with respect to the involution:");
+-	for(i=0;i<DEGREE;++i) printf("%d ",s[i]);
++	for(i = 0; i < DEGREE; ++i) printf("%d ",s[i]);
+ 	printf("\n");
+ #endif
+ 
+-	for(j=0; j<DEGREE; ++j)
++	for(j = 0; j < DEGREE; ++j)
+ 		if(j < s[j])
+ 		{
+ #if _VERBOSE_ > 10
+-				printf(" project (j,s[j]) = (%d,%d)\n",j,s[j]);
++				printf(" project (j,s[j]) = (%d,%d)\n", j, s[j]);
+ #endif
+-			for(i=0; i<NB_VECTORS; ++i)
++			for(i = 0; i < NB_VECTORS; ++i)
+ 			{
+ 				v[i][j] = (v[i][j] + v[i][s[j]]) / 2.0;
+ 				v[i][s[j]] = v[i][j];
+@@ -101,10 +101,10 @@ void invariant_projection(double **v, size_t DEGREE, size_t NB_VECTORS, int *s)
+ 		}
+ }
+ 
+-void anti_invariant_projection(double **v, size_t DEGREE, size_t NB_VECTORS, int *s)
+-/* put the vector v[i] for i=0,...,NB_VECTORS in the anti-invariant subspace of s */
++void anti_invariant_projection(double **v, int DEGREE, int NB_VECTORS, int *s)
++/* put the vector v[i] for i=0,...,NB_VECTORS in the anti-invariant subspace of the involution s */
+ {
+-	size_t i,j;
++	int i, j;
+ 
+ #if _VERBOSE_ > 10
+ 	printf("Projection on E- of the %d vectors at %x ",NB_VECTORS,v);
+diff --git a/surface_dynamics/flat_surfaces/origamis/normal_form.c b/surface_dynamics/flat_surfaces/origamis/normal_form.c
+index 98a1e34f..da349292 100644
+--- a/surface_dynamics/flat_surfaces/origamis/normal_form.c
++++ b/surface_dynamics/flat_surfaces/origamis/normal_form.c
+@@ -6,24 +6,24 @@
+ /***************/
+ 
+ /* TODO: inline troubles */
+-int origami_diff(int *x1, int *x2, unsigned int n)
++int origami_diff(int *x1, int *x2, int n)
+ {
+-	unsigned int i;
++	int i;
+ 	int test;
+ 
+-	for(i=0; i<2*n; ++i)
+-		if(test = x1[i] - x2[i]) return test;
++	for(i = 0; i < 2 * n; ++i)
++		if((test = x1[i] - x2[i])) return test;
+ 	return 0;
+ }
+ 
+ /* TODO: inline troubles */
+-int pillowcase_cover_diff(int *g1, int *g2, unsigned int n)
++int pillowcase_cover_diff(int *g1, int *g2, int n)
+ {
+-	unsigned int i;
++	int i;
+ 	int test;
+ 
+-	for(i=0; i<4*n; ++i)
+-		if(test = g1[i] - g2[i]) return test;
++	for(i = 0; i < 4 * n; ++i)
++		if((test = g1[i] - g2[i])) return test;
+ 	return 0;
+ }
+ 
+@@ -109,10 +109,10 @@ void SF_free(void)
+ }
+ 
+ /* TODO: add in argument the list of potential 0 squares */
+-void origami_normal_form(int *x, int *y, int *renum, unsigned int n)
++void origami_normal_form(int *x, int *y, int *renum, int n)
+ {
+-	int i,j,k,cmax;
+-	int mi,m;
++	int i, j, k, cmax;
++	int mi, m;
+ 	int i_test = 0;
+ 	int * tmp;
+ 
+@@ -126,7 +126,7 @@ void origami_normal_form(int *x, int *y, int *renum, unsigned int n)
+ 	/* set SF_xxx = MAX and SF_yyy = MAX */
+ 	/* set SF_vertices = x y x^-1 y ^-1  */
+ 	/* set SF_seen = 1                   */
+-    for(i=0; i<n; ++i)
++    for(i = 0; i < n; ++i)
+ 	{
+ 		SF_xxx[i] = SF_yyy[i] = n;
+ 
+diff --git a/surface_dynamics/flat_surfaces/origamis/normal_form.h b/surface_dynamics/flat_surfaces/origamis/normal_form.h
+index 1e4c3030..a582c177 100644
+--- a/surface_dynamics/flat_surfaces/origamis/normal_form.h
++++ b/surface_dynamics/flat_surfaces/origamis/normal_form.h
+@@ -13,9 +13,9 @@ void SF_free(void);
+ /*    0 if o1 == o2                            */ 
+ /*    1 if o1 > o2                             */
+ /* TODO: inline troubles*/
+-int origami_diff(int *o1, int *o2, unsigned int n);
++int origami_diff(int *o1, int *o2, int n);
+ /* Comparison of two origamis. */
+-int pillowcase_cover_diff(int *g1, int *g2, unsigned int n);
++int pillowcase_cover_diff(int *g1, int *g2, int n);
+ /* Comparison of pillowcase covers. */
+ 
+ /***********************************************/
+@@ -23,5 +23,5 @@ int pillowcase_cover_diff(int *g1, int *g2, unsigned int n);
+ /* Modify x and y in order to make the origami (x,y) in */
+ /* normal form                                          */
+ /* renum is set to the permutation used to renumerote   */
+-void origami_normal_form(int *x, int *y, int *renum, unsigned int n);
++void origami_normal_form(int *x, int *y, int *renum, int n);
+ /* int pillowcase_cover_normal_form(int *g, int *renum, unsigned int n); */
+diff --git a/surface_dynamics/flat_surfaces/origamis/origami_dense.pyx b/surface_dynamics/flat_surfaces/origamis/origami_dense.pyx
+index daebd010..bb777fff 100644
+--- a/surface_dynamics/flat_surfaces/origamis/origami_dense.pyx
++++ b/surface_dynamics/flat_surfaces/origamis/origami_dense.pyx
+@@ -61,11 +61,11 @@ from sage.libs.gap.libgap import libgap
+ from sage.misc.decorators import options
+ 
+ cdef extern from "normal_form.h":
+-    int origami_normal_form(int *x, int *y, int *ren, unsigned int n)
+-    int pillowcase_cover_normal_form(int *g, int *ren, unsigned int n)
++    int origami_normal_form(int *x, int *y, int *ren, int n)
++    int pillowcase_cover_normal_form(int *g, int *ren, int n)
+     # TODO: inline troubles
+-    int origami_diff(int *o1, int *o2, unsigned int n)
+-    int pillowcase_cover_diff(int *g1, int *g2, unsigned int n)
++    int origami_diff(int *o1, int *o2, int n)
++    int pillowcase_cover_diff(int *g1, int *g2, int n)
+ 
+ cdef extern from "lyapunov_exponents.h":
+     ctypedef struct origami_data
+@@ -215,7 +215,7 @@ def lattice(vectors):
+     return (a, w[0][1], w[0][0])
+ 
+ 
+-cdef inline tuple array_to_tuple(int * x, unsigned int n):
++cdef inline tuple array_to_tuple(int * x, int n):
+     # This approach raises a SIGSEGV error
+     #    cdef int i
+     #    cdef tuple res = PyTuple_New(<Py_ssize_t> n)
+@@ -233,7 +233,7 @@ cdef inline tuple array_to_tuple(int * x, unsigned int n):
+     return tuple(res)
+ 
+ 
+-cdef inline tuple array_to_tuple_i(int * x, unsigned int n):
++cdef inline tuple array_to_tuple_i(int * x, int n):
+     # This approach raises a SIGSEGV error
+     #    cdef int i
+     #    cdef tuple res = PyTuple_New(<Py_ssize_t> n)
+@@ -1888,7 +1888,8 @@ cdef class Origami_dense_pyx:
+         import sys
+         cdef origami_with_involution_data * o
+         cdef double * theta
+-        cdef size_t i, n, n_p, n_m
++        cdef int i
++        cdef size_t j, n, n_p, n_m
+         n_p = nb_vectors_p
+         n_m = nb_vectors_m
+ 
+@@ -1921,8 +1922,8 @@ cdef class Origami_dense_pyx:
+             lyapunov_exponents_with_involution(o, nb_iterations, theta)
+             while any(isnan(theta[i]) for i in range(n+1)):
+                 lyapunov_exponents_with_involution(o, nb_iterations, theta)
+-            for i in range(n):
+-                res[i].append(R(theta[i+1] / (2*theta[0])))
++            for j in range(n):
++                res[j].append(R(theta[j + 1] / (2 * theta[0])))
+ 
+         free_origami_with_involution_data(o)
+         free(s)
+@@ -1930,8 +1931,8 @@ cdef class Origami_dense_pyx:
+ 
+         if only_mean:
+             rres = []
+-            for i in range(n):
+-                rres.append(sum(res[i]) / nb_experiments)
++            for j in range(n):
++                rres.append(sum(res[j]) / nb_experiments)
+ 
+             return rres[:nb_vectors_p], rres[n_p:n_p+nb_vectors_m]
+ 
+@@ -2076,7 +2077,7 @@ cdef class Origami_dense_pyx:
+         cdef Origami_dense_pyx ss, oo
+         ss, ms = self.relabel(inplace=False, return_map=True)
+         oo, mo = other.relabel(inplace=False, return_map=True)
+-        cdef size_t i
++        cdef int i
+         for i in range(self._n):
+             if ss._r[i] != oo._r[i]:
+                 return (False, None) if certificate else False
+@@ -2720,7 +2721,7 @@ cdef class Origami_dense_pyx:
+         from sage.groups.perm_gps.permgroup_named import SymmetricGroup
+ 
+         cdef int N = self._n
+-        cdef size_t i, j
++        cdef int i, j
+ 
+         if len(sr) != N or len(su) != N:
+             raise ValueError("sr and su should be two lists of length %d" % N)
+diff --git a/surface_dynamics/flat_surfaces/strata.py b/surface_dynamics/flat_surfaces/strata.py
+index 3c7cd5e5..eddb9d5e 100644
+--- a/surface_dynamics/flat_surfaces/strata.py
++++ b/surface_dynamics/flat_surfaces/strata.py
+@@ -75,32 +75,48 @@ class Stratum(UniqueRepresentation, SageObject):
+         sage: S = Stratum((2, 2, 2), k=3)
+         sage: loads(dumps(S)) == S
+         True
++
++    Test unique representation::
++
++        sage: assert Stratum([1, 2, 1], k=1) is Stratum((2, 1, 1), k=1)
++        sage: assert Stratum([1, 2, 1], k=2) is Stratum((2, 1, 1), k=2)
++        sage: assert Stratum([2, 4, 2], k=4) is Stratum((4, 2, 2), k=4)
+     """
++    # NOTE: calling Stratum(...) might return one of the subclasses
++    # AbelianStratum or QuadraticStratum. The dispatch is done in
++    # __classcall_private__ which is not inherited. The argument normalization
++    # (in order for the unique representation to work) is done in __classcall__
++    # which is inherited.
+     @staticmethod
+-    def __classcall_private__(self, signature, k=1):
++    def __classcall_private__(cls, signature, k=1):
++        if not isinstance(k, numbers.Integral) or k <= 0:
++            raise ValueError('k must be a positive integer')
++        k = int(k)
++
++        if k == 1:
++            from .abelian_strata import AbelianStratum
++            return AbelianStratum(signature, k)
++        elif k == 2:
++            from .quadratic_strata import QuadraticStratum
++            return QuadraticStratum(signature, k)
++        else:
++            return Stratum.__classcall__(cls, signature, k)
++
++    @staticmethod
++    def __classcall__(cls, signature, k=1):
+         if not isinstance(k, numbers.Integral) or k <= 0:
+             raise ValueError('k must be a positive integer')
+         k = int(k)
+         if isinstance(signature, dict):
+             signature = sum(([i] * mult for i, mult in signature.items()), [])
+-        signature = tuple(signature)
++        signature = tuple(sorted(map(int, signature), reverse=True))
+         if not signature:
+             raise ValueError('the signature must be non-empty')
+         for m in signature:
+             if not isinstance(m, numbers.Integral):
+                 raise ValueError('mu must be a list of integers')
+ 
+-        signature = tuple(sorted(map(int, signature), reverse=True))
+-        return super().__classcall__(Stratum, signature, k)
+-
+-    def __new__(cls, signature, k):
+-        if k == 1:
+-            from .abelian_strata import AbelianStratum as cls
+-        elif k == 2:
+-            from .quadratic_strata import QuadraticStratum as cls
+-        else:
+-            cls = Stratum
+-        return object.__new__(cls)
++        return super().__classcall__(cls, signature, k)
+ 
+     def __init__(self, signature, k=1):
+         s = sum(signature)
+diff --git a/surface_dynamics/interval_exchanges/generalized_permutation.c b/surface_dynamics/interval_exchanges/generalized_permutation.c
+index 22e1eddb..ecae617f 100644
+--- a/surface_dynamics/interval_exchanges/generalized_permutation.c
++++ b/surface_dynamics/interval_exchanges/generalized_permutation.c
+@@ -34,7 +34,7 @@ free_generalized_permutation(generalized_permutation ** gp)
+ void
+ print_generalized_permutation(generalized_permutation * gp)
+ {
+-    size_t i;
++    int i;
+     for (i = 0; i < gp->k; ++i)
+         printf(" %2d", (gp->perm)[i]);
+     printf("\n");
+diff --git a/surface_dynamics/interval_exchanges/integer_iet.pyx b/surface_dynamics/interval_exchanges/integer_iet.pyx
+index 6e425fd5..1f03aa2b 100644
+--- a/surface_dynamics/interval_exchanges/integer_iet.pyx
++++ b/surface_dynamics/interval_exchanges/integer_iet.pyx
+@@ -516,7 +516,7 @@ def interval_exchange_statistics_sample(top, bot, uint64_t L, uint64_t sample_si
+     cdef int k = len(top)
+     cdef int n = (len(top) + len(bot)) // 2
+     cdef int i
+-    cdef int count
++    cdef uint64_t count
+     cdef int_iet_t t
+ 
+     if flat:
+diff --git a/surface_dynamics/interval_exchanges/lin_alg.c b/surface_dynamics/interval_exchanges/lin_alg.c
+index 86efa86e..9e30e498 100644
+--- a/surface_dynamics/interval_exchanges/lin_alg.c
++++ b/surface_dynamics/interval_exchanges/lin_alg.c
+@@ -265,7 +265,8 @@ orthogonalize_iso(quad_cover * qcc, double *theta, size_t nb_char,
+ /* warning: it is 2*log(entry) and not log(entry)                                              */
+ /* element at position (i,j,k): (qcc->labels)[j].v[i + nb_vectors*k];                          */
+ {
+-    int i, ii, j, k, i_char, sum_dimensions = 0;
++    int sum_dimensions = 0;
++    size_t i, ii, i_char, j, k;
+ 
+     double norm, sqnorm, c;
+     double *tmp = NULL;
+diff --git a/surface_dynamics/interval_exchanges/lyapunov_exponents.h b/surface_dynamics/interval_exchanges/lyapunov_exponents.h
+index 3a302f58..5763aa97 100644
+--- a/surface_dynamics/interval_exchanges/lyapunov_exponents.h
++++ b/surface_dynamics/interval_exchanges/lyapunov_exponents.h
+@@ -34,7 +34,7 @@ long double ldrand(void);
+ typedef struct Xgeneralized_permutation{
+ int * perm;
+ int * twin;
+-int k,n;
++int k, n;
+ } generalized_permutation;
+ 
+ generalized_permutation * new_generalized_permutation(int *perm, int *twin, int k, int n);
+diff --git a/surface_dynamics/interval_exchanges/lyapunov_exponents.pyx b/surface_dynamics/interval_exchanges/lyapunov_exponents.pyx
+index ba7107a2..5cf2524b 100644
+--- a/surface_dynamics/interval_exchanges/lyapunov_exponents.pyx
++++ b/surface_dynamics/interval_exchanges/lyapunov_exponents.pyx
+@@ -88,12 +88,12 @@ def lyapunov_exponents_H_plus_cover(
+     - ``verbose`` -- if ``True`` print additional information concerning the
+       mean and standard deviation
+     """
+-    cdef int n
++    cdef int i, n
+     cdef int *p   # permutation
+     cdef int *t   # twin
+     cdef size_t **s   # sigma
+     cdef size_t nc
+-    cdef size_t degree, i, j, nn
++    cdef size_t degree, j, nn
+     cdef size_t *dim
+     cdef generalized_permutation *gp_c
+     cdef quad_cover *qcc
+@@ -128,7 +128,7 @@ def lyapunov_exponents_H_plus_cover(
+     else:
+         degree = len(sigma[0])
+         sd = set(range(degree))
+-        if not all(len(l) == degree and set(l) == sd for l in sigma):
++        if not all(len(l) == <int> degree and set(l) == sd for l in sigma):
+             raise ValueError("sigma should be a list of lists of length d that are permutations of {0, 1, ..., d}")
+ 
+     p = <int *> malloc(2*n * sizeof(int))
+@@ -160,7 +160,7 @@ def lyapunov_exponents_H_plus_cover(
+         set_random_lengths_quad_cover(qcc)
+     else:
+         l = <long double *> malloc(n * sizeof(long double))
+-        for i from 0 <= i < n:
++        for i in range(n):
+             l[i] = <long double> lengths[i]
+         set_lengths(qcc, l)
+         free(l)
+@@ -184,13 +184,13 @@ def lyapunov_exponents_H_plus_cover(
+ 
+         if projections is not None:
+             dim = <size_t *> malloc(nc * sizeof(size_t))
+-            for i from 0 <= i < nc:
+-                dim[i] = int(dimensions[i])
++            for j in range(nc):
++                dim[j] = int(dimensions[j])
+ 
+             proj = <double *> malloc((n * degree)**2 * nc * sizeof(double))
+             flat_projections = projections.flatten()
+-            for i from 0 <= i < (n * degree)**2 * nc:
+-                proj[i] = flat_projections[i]
++            for j in range((n * degree)**2 * nc):
++                proj[j] = flat_projections[j]
+ 
+             i = 0
+             while i < nb_experiments:
+diff --git a/surface_dynamics/interval_exchanges/quad_cover.c b/surface_dynamics/interval_exchanges/quad_cover.c
+index 7650b4d1..82d8c939 100644
+--- a/surface_dynamics/interval_exchanges/quad_cover.c
++++ b/surface_dynamics/interval_exchanges/quad_cover.c
+@@ -138,7 +138,7 @@ new_quad_cover(generalized_permutation * gp, size_t ** sigma, size_t degree,
+ /*   Finally, we set nb_vectors vectors, with degree*nb_intervals coordinates, to follow the monodromy afterward. */
+ {
+ 
+-    size_t i;
++    int i;
+     quad_cover *qcc;
+ 
+     qcc = (quad_cover *) malloc(sizeof(quad_cover));
+@@ -215,7 +215,7 @@ new_quad_cover(generalized_permutation * gp, size_t ** sigma, size_t degree,
+         }
+         else
+         {
+-            if (((gp->twin)[i] < gp->k) || ((gp->twin)[i] > i))
++            if (((gp->twin)[i] < (int) (gp->k)) || ((gp->twin)[i] > i))
+                 (qcc->intervals)[i].orientation = -1;
+         }
+ 
+@@ -454,8 +454,7 @@ void
+ print_quad_cover(quad_cover * qcc)
+ {
+     interval *i;
+-    size_t j, n, d, k;
+-    int verbose = 0;
++    size_t j, n;
+ 
+     i = qcc->top;
+     while (i->prev != NULL)
+@@ -795,8 +794,7 @@ lyapunov_exponents_isotypic(quad_cover * qcc, double *theta,
+                             size_t nb_iterations, size_t nb_char,
+                             size_t * dimensions, double *proj)
+ {
+-    size_t i, j, nb_ren = 0;
+-    double buffer;
++    size_t i, nb_ren = 0;
+ 
+     set_random_lengths_quad_cover(qcc);
+     set_random_vectors(qcc);
