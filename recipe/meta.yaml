@@ -1,5 +1,5 @@
 {% set name = "surface-dynamics" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name }}
@@ -7,13 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: cc2a9ca4ddddf67d220648380510a180334bc96163c72b6bd7a8bb86e1c40785
-  patches:
-    # Use https://github.com/flatsurf/surface-dynamics/pull/109 to make things work with SageMath 10.5
-    - 109.patch  # [sagelib == '10.5']
+  sha256: 38310ede7df3f855cc76d1f702966a9f8ccc91799de0a57b9dda12a3b68ab1f7
 
 build:
-  number: 3
+  number: 0
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # Different versions of SageMath have been built for different versions of Python
