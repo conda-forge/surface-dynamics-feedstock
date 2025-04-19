@@ -10,7 +10,7 @@ source:
   sha256: 38310ede7df3f855cc76d1f702966a9f8ccc91799de0a57b9dda12a3b68ab1f7
 
 build:
-  number: 0
+  number: 1
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # Different versions of SageMath have been built for different versions of Python
@@ -44,6 +44,8 @@ build:
   skip: true  # [sagelib == '10.2' and py not in (39, 310, 311)]
   # sagelib 10.3 is only available for Python 3.9, 3.10, 3.11
   skip: true  # [sagelib == '10.3' and py not in (39, 310, 311)]
+  # sagelib 10.6 only supports Python 3.11, 3.12
+  skip: true  # [sagelib == '10.6' and py not in (311, 312)]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
