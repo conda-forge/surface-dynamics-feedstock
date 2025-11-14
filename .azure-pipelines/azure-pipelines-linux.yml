@@ -140,51 +140,7 @@ jobs:
         CONFIG: linux_64_python3.12.____cpythonsagelib9.8
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_python3.13.____cp313sagelib10.0:
-        CONFIG: linux_64_python3.13.____cp313sagelib10.0
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_python3.13.____cp313sagelib10.1:
-        CONFIG: linux_64_python3.13.____cp313sagelib10.1
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_python3.13.____cp313sagelib10.2:
-        CONFIG: linux_64_python3.13.____cp313sagelib10.2
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_python3.13.____cp313sagelib10.3:
-        CONFIG: linux_64_python3.13.____cp313sagelib10.3
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_python3.13.____cp313sagelib10.4:
-        CONFIG: linux_64_python3.13.____cp313sagelib10.4
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_python3.13.____cp313sagelib10.5:
-        CONFIG: linux_64_python3.13.____cp313sagelib10.5
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_python3.13.____cp313sagelib10.6:
-        CONFIG: linux_64_python3.13.____cp313sagelib10.6
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_python3.13.____cp313sagelib10.7:
-        CONFIG: linux_64_python3.13.____cp313sagelib10.7
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_python3.13.____cp313sagelib9.6:
-        CONFIG: linux_64_python3.13.____cp313sagelib9.6
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_python3.13.____cp313sagelib9.7:
-        CONFIG: linux_64_python3.13.____cp313sagelib9.7
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_python3.13.____cp313sagelib9.8:
-        CONFIG: linux_64_python3.13.____cp313sagelib9.8
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-    maxParallel: 25
+    maxParallel: 17
   timeoutInMinutes: 360
   variables: {}
 
