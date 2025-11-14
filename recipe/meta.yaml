@@ -58,6 +58,9 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
+    # Build with Cython 3.2 gives:
+    # TypeError: C variable sage.rings.integer._small_primes_table has wrong signature (expected int [500], got int [0x1F4])
+    - cython <3.2
     - pip
     - setuptools
     # sage.modular.multiple_zeta.MultizetaValues does not work in sagelib 9.3 with pari 2.13:
