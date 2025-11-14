@@ -62,8 +62,10 @@ requirements:
     - {{ compiler('cxx') }}
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython <3.2                            # [build_platform != target_platform]
-    - numpy                                  # [build_platform != target_platform]
+    - cython <3.2                            # [build_platform != target_platform and sagelib in ('10.2', '10.3', '10.4', '10.5', '10.6', '10.7')]
+    - cython <1                              # [build_platform != target_platform and sagelib in ('9.6', '9.7', '9.8', '10.0', '10.1')]
+    - numpy <2                               # [build_platform != target_platform and sagelib in ('9.6', '9.7', '9.8', '10.0', '10.1', '10.2', '10.3', '10.4', '10.5')]
+    - numpy >=2                              # [build_platform != target_platform and sagelib in ('10.6', '10.7')]
   host:
     - python
     # Build with Cython 3.2 gives:
