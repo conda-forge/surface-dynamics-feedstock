@@ -10,7 +10,7 @@ source:
   sha256: 38310ede7df3f855cc76d1f702966a9f8ccc91799de0a57b9dda12a3b68ab1f7
 
 build:
-  number: 1
+  number: 2
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # Different versions of SageMath have been built for different versions of Python
@@ -44,8 +44,14 @@ build:
   skip: true  # [sagelib == '10.2' and py not in (39, 310, 311)]
   # sagelib 10.3 is only available for Python 3.9, 3.10, 3.11
   skip: true  # [sagelib == '10.3' and py not in (39, 310, 311)]
+  # sagelib 10.4 is only available for Python 3.9, 3.10, 3.11, 3.12
+  skip: true  # [sagelib == '10.4' and py not in (39, 310, 311, 312)]
+  # sagelib 10.5 is only available for Python 3.9, 3.10, 3.11, 3.12
+  skip: true  # [sagelib == '10.5' and py not in (39, 310, 311, 312)]
   # sagelib 10.6 only supports Python 3.11, 3.12
   skip: true  # [sagelib == '10.6' and py not in (311, 312)]
+  # sagelib 10.7 only supports Python 3.11, 3.12
+  skip: true  # [sagelib == '10.7' and py not in (311, 312)]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -56,6 +62,9 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
+    # Build with Cython 3.2 gives:
+    # TypeError: C variable sage.rings.integer._small_primes_table has wrong signature (expected int [500], got int [0x1F4])
+    - cython <3.2
     - pip
     - setuptools
     # sage.modular.multiple_zeta.MultizetaValues does not work in sagelib 9.3 with pari 2.13:
