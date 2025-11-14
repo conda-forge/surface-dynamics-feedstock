@@ -29,6 +29,9 @@ jobs:
       osx_64_python3.10.____cpythonsagelib10.6:
         CONFIG: osx_64_python3.10.____cpythonsagelib10.6
         UPLOAD_PACKAGES: 'True'
+      osx_64_python3.10.____cpythonsagelib10.7:
+        CONFIG: osx_64_python3.10.____cpythonsagelib10.7
+        UPLOAD_PACKAGES: 'True'
       osx_64_python3.10.____cpythonsagelib9.6:
         CONFIG: osx_64_python3.10.____cpythonsagelib9.6
         UPLOAD_PACKAGES: 'True'
@@ -58,6 +61,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_python3.11.____cpythonsagelib10.6:
         CONFIG: osx_64_python3.11.____cpythonsagelib10.6
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.11.____cpythonsagelib10.7:
+        CONFIG: osx_64_python3.11.____cpythonsagelib10.7
         UPLOAD_PACKAGES: 'True'
       osx_64_python3.11.____cpythonsagelib9.6:
         CONFIG: osx_64_python3.11.____cpythonsagelib9.6
@@ -89,6 +95,9 @@ jobs:
       osx_64_python3.12.____cpythonsagelib10.6:
         CONFIG: osx_64_python3.12.____cpythonsagelib10.6
         UPLOAD_PACKAGES: 'True'
+      osx_64_python3.12.____cpythonsagelib10.7:
+        CONFIG: osx_64_python3.12.____cpythonsagelib10.7
+        UPLOAD_PACKAGES: 'True'
       osx_64_python3.12.____cpythonsagelib9.6:
         CONFIG: osx_64_python3.12.____cpythonsagelib9.6
         UPLOAD_PACKAGES: 'True'
@@ -119,6 +128,9 @@ jobs:
       osx_64_python3.13.____cp313sagelib10.6:
         CONFIG: osx_64_python3.13.____cp313sagelib10.6
         UPLOAD_PACKAGES: 'True'
+      osx_64_python3.13.____cp313sagelib10.7:
+        CONFIG: osx_64_python3.13.____cp313sagelib10.7
+        UPLOAD_PACKAGES: 'True'
       osx_64_python3.13.____cp313sagelib9.6:
         CONFIG: osx_64_python3.13.____cp313sagelib9.6
         UPLOAD_PACKAGES: 'True'
@@ -128,127 +140,7 @@ jobs:
       osx_64_python3.13.____cp313sagelib9.8:
         CONFIG: osx_64_python3.13.____cp313sagelib9.8
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.10.____cpythonsagelib10.0:
-        CONFIG: osx_arm64_python3.10.____cpythonsagelib10.0
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.10.____cpythonsagelib10.1:
-        CONFIG: osx_arm64_python3.10.____cpythonsagelib10.1
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.10.____cpythonsagelib10.2:
-        CONFIG: osx_arm64_python3.10.____cpythonsagelib10.2
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.10.____cpythonsagelib10.3:
-        CONFIG: osx_arm64_python3.10.____cpythonsagelib10.3
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.10.____cpythonsagelib10.4:
-        CONFIG: osx_arm64_python3.10.____cpythonsagelib10.4
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.10.____cpythonsagelib10.5:
-        CONFIG: osx_arm64_python3.10.____cpythonsagelib10.5
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.10.____cpythonsagelib10.6:
-        CONFIG: osx_arm64_python3.10.____cpythonsagelib10.6
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.10.____cpythonsagelib9.6:
-        CONFIG: osx_arm64_python3.10.____cpythonsagelib9.6
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.10.____cpythonsagelib9.7:
-        CONFIG: osx_arm64_python3.10.____cpythonsagelib9.7
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.10.____cpythonsagelib9.8:
-        CONFIG: osx_arm64_python3.10.____cpythonsagelib9.8
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.11.____cpythonsagelib10.0:
-        CONFIG: osx_arm64_python3.11.____cpythonsagelib10.0
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.11.____cpythonsagelib10.1:
-        CONFIG: osx_arm64_python3.11.____cpythonsagelib10.1
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.11.____cpythonsagelib10.2:
-        CONFIG: osx_arm64_python3.11.____cpythonsagelib10.2
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.11.____cpythonsagelib10.3:
-        CONFIG: osx_arm64_python3.11.____cpythonsagelib10.3
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.11.____cpythonsagelib10.4:
-        CONFIG: osx_arm64_python3.11.____cpythonsagelib10.4
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.11.____cpythonsagelib10.5:
-        CONFIG: osx_arm64_python3.11.____cpythonsagelib10.5
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.11.____cpythonsagelib10.6:
-        CONFIG: osx_arm64_python3.11.____cpythonsagelib10.6
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.11.____cpythonsagelib9.6:
-        CONFIG: osx_arm64_python3.11.____cpythonsagelib9.6
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.11.____cpythonsagelib9.7:
-        CONFIG: osx_arm64_python3.11.____cpythonsagelib9.7
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.11.____cpythonsagelib9.8:
-        CONFIG: osx_arm64_python3.11.____cpythonsagelib9.8
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.12.____cpythonsagelib10.0:
-        CONFIG: osx_arm64_python3.12.____cpythonsagelib10.0
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.12.____cpythonsagelib10.1:
-        CONFIG: osx_arm64_python3.12.____cpythonsagelib10.1
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.12.____cpythonsagelib10.2:
-        CONFIG: osx_arm64_python3.12.____cpythonsagelib10.2
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.12.____cpythonsagelib10.3:
-        CONFIG: osx_arm64_python3.12.____cpythonsagelib10.3
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.12.____cpythonsagelib10.4:
-        CONFIG: osx_arm64_python3.12.____cpythonsagelib10.4
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.12.____cpythonsagelib10.5:
-        CONFIG: osx_arm64_python3.12.____cpythonsagelib10.5
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.12.____cpythonsagelib10.6:
-        CONFIG: osx_arm64_python3.12.____cpythonsagelib10.6
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.12.____cpythonsagelib9.6:
-        CONFIG: osx_arm64_python3.12.____cpythonsagelib9.6
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.12.____cpythonsagelib9.7:
-        CONFIG: osx_arm64_python3.12.____cpythonsagelib9.7
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.12.____cpythonsagelib9.8:
-        CONFIG: osx_arm64_python3.12.____cpythonsagelib9.8
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.13.____cp313sagelib10.0:
-        CONFIG: osx_arm64_python3.13.____cp313sagelib10.0
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.13.____cp313sagelib10.1:
-        CONFIG: osx_arm64_python3.13.____cp313sagelib10.1
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.13.____cp313sagelib10.2:
-        CONFIG: osx_arm64_python3.13.____cp313sagelib10.2
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.13.____cp313sagelib10.3:
-        CONFIG: osx_arm64_python3.13.____cp313sagelib10.3
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.13.____cp313sagelib10.4:
-        CONFIG: osx_arm64_python3.13.____cp313sagelib10.4
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.13.____cp313sagelib10.5:
-        CONFIG: osx_arm64_python3.13.____cp313sagelib10.5
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.13.____cp313sagelib10.6:
-        CONFIG: osx_arm64_python3.13.____cp313sagelib10.6
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.13.____cp313sagelib9.6:
-        CONFIG: osx_arm64_python3.13.____cp313sagelib9.6
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.13.____cp313sagelib9.7:
-        CONFIG: osx_arm64_python3.13.____cp313sagelib9.7
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_python3.13.____cp313sagelib9.8:
-        CONFIG: osx_arm64_python3.13.____cp313sagelib9.8
-        UPLOAD_PACKAGES: 'True'
-    maxParallel: 33
+    maxParallel: 25
   timeoutInMinutes: 360
   variables: {}
 
