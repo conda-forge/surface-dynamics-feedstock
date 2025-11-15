@@ -10,7 +10,7 @@ source:
   sha256: 38310ede7df3f855cc76d1f702966a9f8ccc91799de0a57b9dda12a3b68ab1f7
 
 build:
-  number: 2
+  number: 3
   # SageMath is not packaged for Windows
   skip: true  # [win]
   # Different versions of SageMath have been built for different versions of Python
@@ -60,6 +60,12 @@ requirements:
     - {{ stdlib("c") }}
     # surface_dynamics.interval_exchanges.iet_family uses C++
     - {{ compiler('cxx') }}
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - cython <3.2                            # [build_platform != target_platform and sagelib in ('10.2', '10.3', '10.4', '10.5', '10.6', '10.7')]
+    - cython <1                              # [build_platform != target_platform and sagelib in ('9.6', '9.7', '9.8', '10.0', '10.1')]
+    - numpy <2                               # [build_platform != target_platform and sagelib in ('9.6', '9.7', '9.8', '10.0', '10.1', '10.2', '10.3', '10.4', '10.5')]
+    - numpy >=2                              # [build_platform != target_platform and sagelib in ('10.6', '10.7')]
   host:
     - python
     # Build with Cython 3.2 gives:
